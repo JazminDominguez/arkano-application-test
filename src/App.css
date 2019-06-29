@@ -82,3 +82,10 @@ left: 90px;
   left: 30px;
   color: whitesmoke;
 }
+ul.navBar li {
+  list-style-type: none;
+  margin: 5px;;
+}
+.active {
+  background-color: #0099FF;
+}

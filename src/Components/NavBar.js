@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { Component } from "react";
+import {
+  Route,
+  NavLink,
+  HashRouter
+} from "react-router-dom";
+import Form from "./Form";
+import Dashboard from "./Dashboard";
 
-const NavBar = () => {
+class NavBar extends Component {
+    render(){
     return (
         <section className="nav">
             <section className="userInfo">
@@ -16,12 +24,20 @@ const NavBar = () => {
                     MAIN NAVIGATION
                 </p>
              </section>
-             <section className="navBar">
-                 <div><p>Form</p></div>
-                 <div><p>Dashboard</p></div>
-             </section>
+             <HashRouter>
+             <ul className="navBar">
+                 <li><NavLink exact to="/"></NavLink></li>
+                 <li><NavLink to="/form">Form</NavLink></li>
+                 <li><NavLink to="/dashboard">Dashboard</NavLink></li>
+             </ul>
+             <div className="content">
+            <Route exact path="/" component={Form}/>
+            <Route path="/form" component={Form}/>
+            <Route path="/dashboard" component={Dashboard}/>
+          </div>
+             </HashRouter>
         </section>
     )
-}
+}}
 
 export default NavBar;
