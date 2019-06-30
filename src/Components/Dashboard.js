@@ -1,19 +1,62 @@
 import React, { Component } from "react";
+import CardDeck from 'react-bootstrap/CardDeck';
+import Card from 'react-bootstrap/Card';
  
 class Dashboard extends Component {
   render() {
     return (
-      <div>
-        <h2>HELLO</h2>
-        <p>Cras facilisis urna ornare ex volutpat, et
-        convallis erat elementum. Ut aliquam, ipsum vitae
-        gravida suscipit, metus dui bibendum est, eget rhoncus nibh
-        metus nec massa. Maecenas hendrerit laoreet augue
-        nec molestie. Cum sociis natoque penatibus et magnis
-        dis parturient montes, nascetur ridiculus mus.</p>
- 
-        <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>
-      </div>
+      <section className="content-form">
+        <div className="dashboard-titles">
+         <h2 className="title">Dashboard</h2>
+        <p className="subtitle">   ESTADISTICAS</p>
+        </div>
+      <CardDeck>
+      <Card bg="info" text="white" style={{ width: '6rem' }}>
+        <Card.Body>
+          <Card.Title>150</Card.Title>
+          <Card.Text>
+            Nuevas Compras
+          </Card.Text>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">Más info</small>
+        </Card.Footer>
+      </Card>
+      <Card bg="success" text="white" style={{ width: '6rem' }}>
+        <Card.Body>
+          <Card.Title>53%</Card.Title>
+          <Card.Text>
+           Incremento de Compras
+          </Card.Text>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">Más info</small>
+        </Card.Footer>
+      </Card>
+      <Card bg="warning" text="white" style={{ width: '6rem' }}>
+        <Card.Body>
+          <Card.Title>44</Card.Title>
+          <Card.Text>
+            Nuevos Usuarios
+          </Card.Text>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">Más info</small>
+        </Card.Footer>
+      </Card>
+      <Card bg="danger" text="white" style={{ width: '6rem' }}>
+        <Card.Body>
+          <Card.Title>65</Card.Title>
+          <Card.Text>
+            Nuevas Visitas
+          </Card.Text>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">Más info</small>
+        </Card.Footer>
+      </Card>
+    </CardDeck>
+    </section>
     );
   }
 }

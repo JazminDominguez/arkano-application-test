@@ -9,7 +9,7 @@ class DashForm extends Component {
       <section className="content-form">
         <div className="dashboard-titles">
          <h2 className="title">Dashboard Form</h2>
-        <p className="subtitle">   ESTADISTICAS</p>
+        <p className="subtitle">   FORMULARIO</p>
         </div>
       <div className="form-size">
       <Form>
@@ -32,8 +32,8 @@ class DashForm extends Component {
           <Form.Label>Cantidad Nuevas Visitas</Form.Label>
           <Form.Control required type="value" placeholder="Nuevas Visitas" />
         </Form.Group>   
-        <Button variant="primary" type="Ingresar Datos">
-          Submit
+        <Button variant="primary" type="Submit">
+        Ingresar Datos
   </Button>
       </Form>
       </div>
