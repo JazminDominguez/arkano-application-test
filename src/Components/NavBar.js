@@ -4,7 +4,7 @@ import {
   NavLink,
   HashRouter
 } from "react-router-dom";
-import Form from "./Form";
+import DashForm from "./Form";
 import Dashboard from "./Dashboard";
 
 class NavBar extends Component {
@@ -31,8 +31,8 @@ class NavBar extends Component {
                  <li><NavLink to="/dashboard">Dashboard</NavLink></li>
              </ul>
              <div className="content">
-            <Route exact path="/" component={Form}/>
-            <Route path="/form" component={Form}/>
+            <Route exact path="/" component={DashForm}/>
+            <Route path="/form" component={DashForm}/>
             <Route path="/dashboard" component={Dashboard}/>
           </div>
              </HashRouter>

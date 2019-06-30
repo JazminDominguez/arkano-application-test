@@ -58,6 +58,7 @@ margin-top: 5px;
 }
 
 .userName,.dot,.userStatus{
+margin-top: 10px;
 color: whitesmoke;
 display: block;
 position: relative;
@@ -82,6 +83,9 @@ left: 90px;
   left: 30px;
   color: whitesmoke;
 }
+ul li::before{
+  color: gray;
+}
 ul.navBar li {
   list-style-type: none;
   margin-right: 0px;
@@ -89,14 +93,51 @@ ul.navBar li {
   width: 250px;
 }
 .active {
-  background-color: #0099FF;
+  background-color: #1b2022;
+  width: 250px;
 }
 
 .content{
   position: relative;
   right: -302px;
   top: -230px;
-  background-color: blueviolet;
+  background-color: whitesmoke;
   height: 93vh;
-  width: 88vh;
+  width: 150vh;
+}
+.dashboard-titles{
+  position: relative;
+  right: -30px;
+  top: 10px;
+  height: 15vh;
+  width: 30vh;
+}
+
+.title{
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.subtitle{
+  font-size: 10px;
+  display: inline-block;
+}
+
+.content-form{
+  position: relative;
+  right: 0px;
+  top: 0px;
+  background-color: whitesmoke;
+  height: 93vh;
+  width: 166vh;
+}
+
+.form-size{
+  background-color: white;
+  top: -50px;
+  position: relative;
+  right: -360px;
+  height: 60vh;
+  width: 70vh;
+  padding: 10px;
 }

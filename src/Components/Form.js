@@ -1,22 +1,45 @@
 import React, { Component } from "react";
- 
-class Form extends Component {
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+
+
+class DashForm extends Component {
   render() {
     return (
-      <div>
-        <h2>STUFF</h2>
-        <p>Mauris sem velit, vehicula eget sodales vitae,
-        rhoncus eget sapien:</p>
-        <ol>
-          <li>Nulla pulvinar diam</li>
-          <li>Facilisis bibendum</li>
-          <li>Vestibulum vulputate</li>
-          <li>Eget erat</li>
-          <li>Id porttitor</li>
-        </ol>
+      <section className="content-form">
+        <div className="dashboard-titles">
+         <h2 className="title">Dashboard Form</h2>
+        <p className="subtitle">   ESTADISTICAS</p>
+        </div>
+      <div className="form-size">
+      <Form>
+        <p>Datos en Dashboard</p>
+
+        <Form.Group controlId="formBasicPassword">
+          <Form.Label>Cantidad de nuevas compras</Form.Label>
+          <Form.Control required
+              type="value" placeholder="Nuevas Compras" />
+        </Form.Group>
+        <Form.Group controlId="formBasicPassword">
+          <Form.Label>Incremento de compras</Form.Label>
+          <Form.Control required type="value" placeholder="% Nuevas Compras" />
+        </Form.Group>
+        <Form.Group controlId="formBasicPassword">
+          <Form.Label>Cantidad Nuevos Usuarios</Form.Label>
+          <Form.Control required type="value" placeholder="Nuevos Usuarios" />
+        </Form.Group>
+        <Form.Group controlId="formBasicPassword">
+          <Form.Label>Cantidad Nuevas Visitas</Form.Label>
+          <Form.Control required type="value" placeholder="Nuevas Visitas" />
+        </Form.Group>   
+        <Button variant="primary" type="Ingresar Datos">
+          Submit
+  </Button>
+      </Form>
       </div>
+      </section>
     );
   }
 }
- 
-export default Form;
+
+export default DashForm;
