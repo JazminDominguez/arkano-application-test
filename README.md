@@ -1,68 +1,56 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Título del Proyecto
 
-## Available Scripts
+Dashboard de Ventas: application test
 
-In the project directory, you can run:
+## Comenzando 🚀
 
-### `npm start`
+Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Para obtner el código de este proyecto de forma local:
+-elegir la carpeta donde se guardará el proyecto
+-git clone link-de-este-repositorio
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
+### Pre-requisitos 📋
+Para poder correr el proyecto necesitaras:
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Node.js o Yarn para ejecutar comandos e instalación.
+```
+para verificar si tienes alguna de estas herramientas instaladas localmente:
+yarn --version
+npm -v
+```
 
-### `npm run build`
+### Instalación 🔧
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose
+La instalación es realmente sencilla, solo requiere la preparación del entorno de la app.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm install
+Este comando instalará las librerías requeridas del proyecto
+```
+npm start
+Levanta el servidor local para ver los cambios en tiempo real en el navegador
 
-### `npm run eject`
+opcional:
+Este proyecto está creado con el framework de React.
+Google Chrome tiene una herramienta de desarrollo de React para su navegador, en él se puede inspeccionar los aspectos de estado y, componentes, entre otros para visualizar mejor qué está pasando dentro de nuestra app.
+[React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Construido con 🛠️
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Menciona las herramientas que utilizaste para crear tu proyecto
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* [REACT - Create React App](https://github.com/facebook/create-react-app) -framework web usado
+* NPM y Yarn - Manejador de dependencias
+* [react-bootstrap](https://github.com/react-bootstrap/react-bootstrap) - Usado para estilos y elementos visuales
+* [react-router](https://github.com/ReactTraining/react-router) - Navegación de la app estilo SPA
+* [react-gh-pages](https://github.com/gitname/react-gh-pages) - librería para visualizar el proyecto en GitHub 
+* [firebase](https://firebase.google.com/?gclid=Cj0KCQjw3uboBRDCARIsAO2XcYBp0MFlHt8nMSiVAh0sRe590ZCRLN_l7bdpI5TxOsqedD9LB9icrV8aAn92EALw_wcB) - Almacenamiento de datos y servicios de back-end
 
-## Learn More
+## Autores ✒️
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* **Jazmín** - *Front End Developer* - 

@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import firebase from "./Firestore";
+import { db } from "./Firestore";
 
 
 class DashForm extends Component {
   constructor(){
     super();
     this.state={
-      newPurchases: "",
-      newUsers: "",
-      newViews: "",
-      purchasesIncrease: "",
+      newPurchases: 0,
+      newUsers: 0,
+      newViews: 0,
+      purchasesIncrease: 0,
     };
   }
 
@@ -23,8 +23,7 @@ class DashForm extends Component {
 
   addData=e=>{
     e.preventDefault();
-    const db = firebase.firestore();
-    db.collection("sales-data").add({
+    db.collection("sales").add({
       newPurchases: this.state.newPurchases,
       newUsers: this.state.newUsers,
       newViews: this.state.newViews,
@@ -51,7 +50,7 @@ class DashForm extends Component {
         <Form.Group controlId="formBasicPassword">
           <Form.Label>Cantidad de nuevas compras</Form.Label>
           <Form.Control required
-              type="value" 
+              type="number" 
               placeholder="Nuevas Compras"
                name="newPurchases" 
                onChange={this.updateInput} 
@@ -60,7 +59,7 @@ class DashForm extends Component {
         <Form.Group controlId="formBasicPassword">
           <Form.Label>Incremento de compras</Form.Label>
           <Form.Control required
-           type="value" 
+           type="number" 
            placeholder="% Nuevas Compras" 
            name="purchasesIncrease" 
            onChange={this.updateInput} 
@@ -69,7 +68,7 @@ class DashForm extends Component {
         <Form.Group controlId="formBasicPassword">
           <Form.Label>Cantidad Nuevos Usuarios</Form.Label>
           <Form.Control required
-           type="value"
+           type="number"
             placeholder="Nuevos Usuarios"
             name="newUsers"
             onChange={this.updateInput} 
@@ -78,7 +77,7 @@ class DashForm extends Component {
         <Form.Group controlId="formBasicPassword">
           <Form.Label>Cantidad Nuevas Visitas</Form.Label>
           <Form.Control required 
-          type="value"
+          type="number"
            placeholder="Nuevas Visitas"
            name="newViews"
            onChange={this.updateInput} 
