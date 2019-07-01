@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/arkano-application-test/static/css/main.d1bbc25a.chunk.css",
+    "main.js": "/arkano-application-test/static/js/main.443373cb.chunk.js",
+    "main.js.map": "/arkano-application-test/static/js/main.443373cb.chunk.js.map",
+    "runtime~main.js": "/arkano-application-test/static/js/runtime~main.75ef8549.js",
+    "runtime~main.js.map": "/arkano-application-test/static/js/runtime~main.75ef8549.js.map",
+    "static/css/2.0624914a.chunk.css": "/arkano-application-test/static/css/2.0624914a.chunk.css",
+    "static/js/2.86279c7e.chunk.js": "/arkano-application-test/static/js/2.86279c7e.chunk.js",
+    "static/js/2.86279c7e.chunk.js.map": "/arkano-application-test/static/js/2.86279c7e.chunk.js.map",
+    "index.html": "/arkano-application-test/index.html",
+    "precache-manifest.af2daf5901a573382615a6c28998f026.js": "/arkano-application-test/precache-manifest.af2daf5901a573382615a6c28998f026.js",
+    "service-worker.js": "/arkano-application-test/service-worker.js",
+    "static/css/2.0624914a.chunk.css.map": "/arkano-application-test/static/css/2.0624914a.chunk.css.map",
+    "static/css/main.d1bbc25a.chunk.css.map": "/arkano-application-test/static/css/main.d1bbc25a.chunk.css.map"
+  }
+}
